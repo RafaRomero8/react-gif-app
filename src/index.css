@@ -1,0 +1,43 @@
+* {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+body {
+  padding: 60px;
+}
+
+h2 {
+  color: cyan;
+}
+
+input {
+  color: gray;
+  font-size: 1.2rem;
+  width: 100%;
+}
+
+.card-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card {
+  align-content: center;
+  border: 1px solid gray;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  overflow: hidden; /*para que las imagnes no se salgan del contenedor*/
+}
+
+.card p {
+  padding: 5px;
+  text-align: center;
+}
+.card img {
+  justify-content: center;
+  max-height: 170px;
+  width: 100%;
+}
