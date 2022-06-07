@@ -25,9 +25,11 @@ const {data:images,loading} = useFetchGifs(category);
         <div className="card-grid">
                 {
                     images.map( img =>(//barremos para  que nos muestre  los id dell img y podemos retornar un objeto
-                        <GifGriditem 
+                        <GifGriditem //es mas comun hacer este parte del codigo
                           key={img.id}
                           { ...img }//utilizamos el operador spreg,mandamso cada una de las propiedades de las imagenes como una propiedad independiente obtenemos el id,title y el url
+                          //manda cada una de las imagenes como una propiedad independiente
+                          //le debemos pasar los argumentos(uan desestructuracion) o los props al GifGriditem ene le componenete
                          
                         />
                     ))

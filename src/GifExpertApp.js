@@ -7,7 +7,7 @@ export const GifExpertApp = () => {//esta es nuestra funcion PADRE
    // const categories = ['One Punch','Dragon Ball','Inuyasha']
  
    //la instruccion para ñadir un elemento o fuera de otro archivo es mediante setCategories
-   const [categories, setCategories] = useState(['one punch'])
+   const [categories, setCategories] = useState(['one punch'])//useState para poder renderizar  o que haya algun cambio
 /*
    const handleAdd = () =>{
     //categories.push('El perro cobarde') no se utiliza el push para  insertar otro eleemnto
@@ -28,8 +28,7 @@ export const GifExpertApp = () => {//esta es nuestra funcion PADRE
     return (
         <>
          <h2>Gif Expert App</h2>
-         <AddCategory setCategories = {setCategories}/>
-         
+         <AddCategory setCategories = {setCategories}/>{/*importamos el AddCategory para poder mostar las cajas de texto */}
          <hr/>
              {/*no se puede colocar una estructura ciclcica como el  for,se necesita una expresion que regrese algo
              .Podemos utilizar metodos como el map digamos para barer el arreglo 

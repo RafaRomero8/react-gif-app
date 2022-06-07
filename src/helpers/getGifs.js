@@ -1,3 +1,5 @@
+
+//se separa las peticiones en otro archivo o carpeta
 export const getGifs = async(category) =>{
     //buscar los endpoints pra consumir el API del GIPHY  en la pagina
       const url = `https://api.giphy.com/v1/gifs/search?q=${encodeURI(category)}&limit=10&api_key=b4BqK3IwDaii8W8ofgf7ZJyybUSBCARy`
@@ -12,6 +14,7 @@ export const getGifs = async(category) =>{
               id:img.id,
               title:img.title,
               url:img.images?.downsized_medium.url//ponemos ?(es una condicion) para preguntar que si tiene las imagenes la utilice 
+              //el downsized esta en el navegador en la consola y el images son propios de la api digamso sus propiedades o endpoints
           }
       })
       //console.log(gifs)
